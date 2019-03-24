@@ -94,20 +94,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hikari1149のBlog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="前言 在普通js应用中,是直接操作真实的DOM去改变应用 在React中,只要数据(State)发生改变,React就会重新渲染出页面. 操作DOM的成本高,造成浏览器回流reflow和重绘reflow,从而消耗GPU资源  虚拟DOM那么当数据发生改变时,React是如何去渲染页面的? 一个navie的想法1.通过State和JSX生成真实的DOM节点2.数据发生改变,在生成一个真实的DOM节点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React-虚拟DOM">
+<meta property="og:url" content="http://yoursite.com/2019/03/24/React-虚拟DOM/index.html">
 <meta property="og:site_name" content="Hikari1149のBlog">
+<meta property="og:description" content="前言 在普通js应用中,是直接操作真实的DOM去改变应用 在React中,只要数据(State)发生改变,React就会重新渲染出页面. 操作DOM的成本高,造成浏览器回流reflow和重绘reflow,从而消耗GPU资源  虚拟DOM那么当数据发生改变时,React是如何去渲染页面的? 一个navie的想法1.通过State和JSX生成真实的DOM节点2.数据发生改变,在生成一个真实的DOM节点">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-24T03:58:05.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hikari1149のBlog">
+<meta name="twitter:title" content="React-虚拟DOM">
+<meta name="twitter:description" content="前言 在普通js应用中,是直接操作真实的DOM去改变应用 在React中,只要数据(State)发生改变,React就会重新渲染出页面. 操作DOM的成本高,造成浏览器回流reflow和重绘reflow,从而消耗GPU资源  虚拟DOM那么当数据发生改变时,React是如何去渲染页面的? 一个navie的想法1.通过State和JSX生成真实的DOM节点2.数据发生改变,在生成一个真实的DOM节点">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/24/React-虚拟DOM/">
 
 
 
@@ -117,7 +121,7 @@
   };
 </script>
 
-  <title>Archive | Hikari1149のBlog</title>
+  <title>React-虚拟DOM | Hikari1149のBlog</title>
   
 
 
@@ -165,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -258,7 +262,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -300,241 +304,182 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/24/React-虚拟DOM/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hikari1149">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hikari1149のBlog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">React-虚拟DOM
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-24 11:54:30 / Modified: 11:58:05" itemprop="dateCreated datePublished" datetime="2019-03-24T11:54:30+08:00">2019-03-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        
-        Um..! 5 posts in total. Keep on posting.
-      </span>
-      
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/24/React-虚拟DOM/" itemprop="url">
             
-              <span itemprop="name">React-虚拟DOM</span>
             
-          </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-24T11:54:30+08:00" content="2019-03-24">
-          03-24
-        </time>
-      </div>
+          
+          
 
-    </header>
-  </article>
+          
 
+          
 
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/18/深拷贝和浅拷贝/" itemprop="url">
-            
-              <span itemprop="name">深拷贝和浅拷贝</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-18T15:00:53+08:00" content="2019-03-18">
-          03-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/02/01/前端练习题合集/" itemprop="url">
-            
-              <span itemprop="name">前端练习题合集</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-01T15:32:00+08:00" content="2019-02-01">
-          02-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li>在普通js应用中,是直接操作真实的DOM去改变应用</li>
+<li>在React中,只要数据(State)发生改变,React就会重新渲染出页面.</li>
+<li>操作DOM的成本高,造成浏览器回流reflow和重绘reflow,从而消耗GPU资源</li>
+</ul>
+<h1 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h1><p>那么当数据发生改变时,React是如何去渲染页面的?</p>
+<h2 id="一个navie的想法"><a href="#一个navie的想法" class="headerlink" title="一个navie的想法"></a>一个navie的想法</h2><p>1.通过State和JSX生成真实的DOM节点<br>2.数据发生改变,在生成一个真实的DOM节点<br>3.两个DOM节点做比较,替换掉旧的部分,完成更新.<br>缺点:直接操作DOM代价高.</p>
+<h2 id="React的做法"><a href="#React的做法" class="headerlink" title="React的做法"></a>React的做法</h2><p>1.通过State和JSX生成一个虚拟的DOM (就是一个JS对象)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">JSX:&lt;div id=&apos;abc&apos;&gt; &lt;span&gt;hello &lt;/span&gt; &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">虚拟DOM:&#123;</span><br><span class="line">    tagname: &apos;div&apos;, </span><br><span class="line">    props:&#123;id:&apos;abc&apos;&#125; , </span><br><span class="line">    children:&#123;</span><br><span class="line">        tagename:&apos;span&apos;,</span><br><span class="line">        props:&#123;&#125;,</span><br><span class="line">        children:[&apos;hello&apos;]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.由虚拟DOM生成一个真实的DOM节点<br>3.数据发生改变时<br>4.生成新的虚拟DOM, 两个虚拟DOM比较(JS对象间的比较) 替换掉旧的部分<br>5.将改变更新到真实的DOM节点中.</p>
+<p>React的做法:数据更新时,不直接生成真实的DOM节点.而是生成一个虚拟DOM(JS对象),新旧DOM做比较实际上是JS对象做比较.</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/31/TEST-blog/" itemprop="url">
-            
-              <span itemprop="name">TEST blog</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-31T17:06:23+08:00" content="2019-01-31">
-          01-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/31/hello-world/" itemprop="url">
-            
-              <span itemprop="name">Hello World</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-31T16:37:29+08:00" content="2019-01-31">
-          01-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/18/深拷贝和浅拷贝/" rel="next" title="深拷贝和浅拷贝">
+                <i class="fa fa-chevron-left"></i> 深拷贝和浅拷贝
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -555,8 +500,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -645,6 +599,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟DOM"><span class="nav-number">2.</span> <span class="nav-text">虚拟DOM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一个navie的想法"><span class="nav-number">2.1.</span> <span class="nav-text">一个navie的想法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React的做法"><span class="nav-number">2.2.</span> <span class="nav-text">React的做法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -781,6 +752,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
 
   
 
@@ -791,6 +766,8 @@
 
   
 
+
+  
 
 
   

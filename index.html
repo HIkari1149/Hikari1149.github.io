@@ -321,6 +321,159 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/24/React-虚拟DOM/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hikari1149">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hikari1149のBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/24/React-虚拟DOM/" class="post-title-link" itemprop="url">React-虚拟DOM</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-24 11:54:30 / Modified: 11:58:05" itemprop="dateCreated datePublished" datetime="2019-03-24T11:54:30+08:00">2019-03-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li>在普通js应用中,是直接操作真实的DOM去改变应用</li>
+<li>在React中,只要数据(State)发生改变,React就会重新渲染出页面.</li>
+<li>操作DOM的成本高,造成浏览器回流reflow和重绘reflow,从而消耗GPU资源</li>
+</ul>
+<h1 id="虚拟DOM"><a href="#虚拟DOM" class="headerlink" title="虚拟DOM"></a>虚拟DOM</h1><p>那么当数据发生改变时,React是如何去渲染页面的?</p>
+<h2 id="一个navie的想法"><a href="#一个navie的想法" class="headerlink" title="一个navie的想法"></a>一个navie的想法</h2><p>1.通过State和JSX生成真实的DOM节点<br>2.数据发生改变,在生成一个真实的DOM节点<br>3.两个DOM节点做比较,替换掉旧的部分,完成更新.<br>缺点:直接操作DOM代价高.</p>
+<h2 id="React的做法"><a href="#React的做法" class="headerlink" title="React的做法"></a>React的做法</h2><p>1.通过State和JSX生成一个虚拟的DOM (就是一个JS对象)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">JSX:&lt;div id=&apos;abc&apos;&gt; &lt;span&gt;hello &lt;/span&gt; &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">虚拟DOM:&#123;</span><br><span class="line">    tagname: &apos;div&apos;, </span><br><span class="line">    props:&#123;id:&apos;abc&apos;&#125; , </span><br><span class="line">    children:&#123;</span><br><span class="line">        tagename:&apos;span&apos;,</span><br><span class="line">        props:&#123;&#125;,</span><br><span class="line">        children:[&apos;hello&apos;]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.由虚拟DOM生成一个真实的DOM节点<br>3.数据发生改变时<br>4.生成新的虚拟DOM, 两个虚拟DOM比较(JS对象间的比较) 替换掉旧的部分<br>5.将改变更新到真实的DOM节点中.</p>
+<p>React的做法:数据更新时,不直接生成真实的DOM节点.而是生成一个虚拟DOM(JS对象),新旧DOM做比较实际上是JS对象做比较.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/深拷贝和浅拷贝/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1065,7 +1218,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
